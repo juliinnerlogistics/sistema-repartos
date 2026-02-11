@@ -1,0 +1,8 @@
+streamlit
+pandas
+geopy
+shapely
+pykml
+certifi
+openpyxl
+lxml

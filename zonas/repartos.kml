@@ -1,0 +1,2738 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Prueba mapa rosario definitivo</name>
+    <description/>
+    <Style id="icon-1899-0288D1-nodesc-normal">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-0288D1-nodesc-highlight">
+      <IconStyle>
+        <color>ffd18802</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-0288D1-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-0288D1-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-1A237E-nodesc-normal">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-1A237E-nodesc-highlight">
+      <IconStyle>
+        <color>ff7e231a</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-1A237E-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-1A237E-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-1A237E-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-757575-normal">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+    </Style>
+    <Style id="icon-1899-757575-highlight">
+      <IconStyle>
+        <color>ff757575</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+    </Style>
+    <StyleMap id="icon-1899-757575">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-757575-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-757575-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-795548-nodesc-normal">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-795548-nodesc-highlight">
+      <IconStyle>
+        <color>ff485579</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-795548-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-795548-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-795548-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-AFB42B-nodesc-normal">
+      <IconStyle>
+        <color>ff2bb4af</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-AFB42B-nodesc-highlight">
+      <IconStyle>
+        <color>ff2bb4af</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-AFB42B-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-AFB42B-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-AFB42B-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-C2185B-nodesc-normal">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-C2185B-nodesc-highlight">
+      <IconStyle>
+        <color>ff5b18c2</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-C2185B-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-C2185B-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-C2185B-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="icon-1899-F57C00-nodesc-normal">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>0</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="icon-1899-F57C00-nodesc-highlight">
+      <IconStyle>
+        <color>ff007cf5</color>
+        <scale>1</scale>
+        <Icon>
+          <href>https://www.gstatic.com/mapspro/images/stock/503-wht-blank_maps.png</href>
+        </Icon>
+        <hotSpot x="32" xunits="pixels" y="64" yunits="insetPixels"/>
+      </IconStyle>
+      <LabelStyle>
+        <scale>1</scale>
+      </LabelStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="icon-1899-F57C00-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#icon-1899-F57C00-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#icon-1899-F57C00-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-0288D1-4701-71-normal">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>4.701</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>47d18802</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <Style id="poly-0288D1-4701-71-highlight">
+      <LineStyle>
+        <color>ffd18802</color>
+        <width>7.0515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>47d18802</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+    </Style>
+    <StyleMap id="poly-0288D1-4701-71">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-0288D1-4701-71-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-0288D1-4701-71-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-1A237E-3901-59-nodesc-normal">
+      <LineStyle>
+        <color>ff7e231a</color>
+        <width>3.901</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3b7e231a</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-1A237E-3901-59-nodesc-highlight">
+      <LineStyle>
+        <color>ff7e231a</color>
+        <width>5.8515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3b7e231a</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-1A237E-3901-59-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-1A237E-3901-59-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-1A237E-3901-59-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-795548-3901-69-nodesc-normal">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>3.901</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>45485579</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-795548-3901-69-nodesc-highlight">
+      <LineStyle>
+        <color>ff485579</color>
+        <width>5.8515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>45485579</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-795548-3901-69-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-795548-3901-69-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-795548-3901-69-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-AFB42B-3701-69-nodesc-normal">
+      <LineStyle>
+        <color>ff2bb4af</color>
+        <width>3.701</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>452bb4af</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-AFB42B-3701-69-nodesc-highlight">
+      <LineStyle>
+        <color>ff2bb4af</color>
+        <width>5.5515</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>452bb4af</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-AFB42B-3701-69-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-AFB42B-3701-69-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-AFB42B-3701-69-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-C2185B-4001-89-nodesc-normal">
+      <LineStyle>
+        <color>ff5b18c2</color>
+        <width>4.001</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>595b18c2</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-C2185B-4001-89-nodesc-highlight">
+      <LineStyle>
+        <color>ff5b18c2</color>
+        <width>6.0015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>595b18c2</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-C2185B-4001-89-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-C2185B-4001-89-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-C2185B-4001-89-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Style id="poly-F57C00-5001-59-nodesc-normal">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>5.001</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3b007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <Style id="poly-F57C00-5001-59-nodesc-highlight">
+      <LineStyle>
+        <color>ff007cf5</color>
+        <width>7.5015</width>
+      </LineStyle>
+      <PolyStyle>
+        <color>3b007cf5</color>
+        <fill>1</fill>
+        <outline>1</outline>
+      </PolyStyle>
+      <BalloonStyle>
+        <text><![CDATA[<h3>$[name]</h3>]]></text>
+      </BalloonStyle>
+    </Style>
+    <StyleMap id="poly-F57C00-5001-59-nodesc">
+      <Pair>
+        <key>normal</key>
+        <styleUrl>#poly-F57C00-5001-59-nodesc-normal</styleUrl>
+      </Pair>
+      <Pair>
+        <key>highlight</key>
+        <styleUrl>#poly-F57C00-5001-59-nodesc-highlight</styleUrl>
+      </Pair>
+    </StyleMap>
+    <Folder>
+      <name>271 - Rosario Centro I</name>
+      <Placemark>
+        <name>271 </name>
+        <description>Rosario Centro</description>
+        <styleUrl>#poly-0288D1-4701-71</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.624221,-32.9696655,0
+                -60.6216031,-32.9587196,0
+                -60.6234914,-32.9549026,0
+                -60.6273538,-32.9488526,0
+                -60.6332761,-32.9425142,0
+                -60.6389409,-32.9373278,0
+                -60.6428891,-32.9345184,0
+                -60.6500989,-32.9306283,0
+                -60.6557423,-32.9542813,0
+                -60.6493493,-32.9557675,0
+                -60.6515061,-32.9649495,0
+                -60.624221,-32.9696655,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Entre Ríos 721</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6405679,-32.944964,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brown 1799</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.645475,-32.935509,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Entre Ríos 401</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6397556,-32.9414464,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Balcarce 298</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6505832,-32.9380215,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Necochea 1795</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6269329,-32.9608646,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Urquiza 1802</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6470859,-32.9411334,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Leandro N. Alem 1298</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.630041,-32.9542943,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Entre Ríos 801</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6409564,-32.9459517,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Juan Manuel de Rosas 1301</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6326963,-32.9541128,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Pellegrini 809</name>
+        <styleUrl>#icon-1899-0288D1-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6371424,-32.9581604,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>272 - Rosario Norte</name>
+      <Placemark>
+        <name>272</name>
+        <styleUrl>#poly-C2185B-4001-89-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.6504959,-32.9320781,0
+                -60.6500989,-32.9306283,0
+                -60.6619169,-32.9240221,0
+                -60.6675677,-32.9196379,0
+                -60.6720163,-32.9138126,0
+                -60.6849998,-32.8926711,0
+                -60.6958474,-32.8500972,0
+                -60.7373949,-32.8513452,0
+                -60.7341476,-32.8591829,0
+                -60.7303309,-32.8638106,0
+                -60.7247971,-32.8675731,0
+                -60.7149684,-32.8762383,0
+                -60.7115957,-32.8834548,0
+                -60.7199065,-32.8935538,0
+                -60.716422,-32.8939556,0
+                -60.7125939,-32.9006993,0
+                -60.7047652,-32.9075561,0
+                -60.6934415,-32.9072886,0
+                -60.6920746,-32.9127701,0
+                -60.6916485,-32.9155829,0
+                -60.6900207,-32.9183957,0
+                -60.6870441,-32.9216071,0
+                -60.6838098,-32.9244582,0
+                -60.6731452,-32.9307108,0
+                -60.6670938,-32.9309337,0
+                -60.6614288,-32.9309401,0
+                -60.6560214,-32.9311085,0
+                -60.6504959,-32.9320781,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>Av. Alberdi 951</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6846177,-32.9167951,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blvd. Rondeau 125</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6869064,-32.9137215,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Central Argentino 270</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6668063,-32.9292671,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name><![CDATA[Neuquén & Avenida San Martín]]></name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7022095,-32.8617902,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Baigorria 957</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6963964,-32.8922886,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>José Ingenieros 876</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6761945,-32.9158942,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Rivadavia 201</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7054601,-32.862277,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Martín Fierro 370</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6913265,-32.8765557,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>PAS</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6901605,-32.9005286,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cmte. José Superí 1466</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.700918,-32.8959923,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blvd. Rondeau 3587</name>
+        <styleUrl>#icon-1899-C2185B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6966595,-32.8824554,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>273 - Rosario Sur I</name>
+      <Placemark>
+        <name>Av. Ntra Sra del Rosario 3189</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6795788,-33.0012133,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blvd. Oroño 5835</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6644773,-33.0048904,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Arijon 1288</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6515029,-33.0029763,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Lamadrid 1977</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6618325,-32.9976446,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blvd. Seguí 1494</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6517716,-32.9779611,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Callao 5044</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.672101,-32.9961832,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Corrientes 4799</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6534808,-32.9929487,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>SBM</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6453664,-32.9745521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Fragata Sarmiento 3019</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6761824,-32.988278,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Ntra Sra del Rosario 1401</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.653469,-33.0001217,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Cnel. M. Biedma 3086</name>
+        <styleUrl>#icon-1899-1A237E-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6739787,-32.9763874,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>273</name>
+        <styleUrl>#poly-1A237E-3901-59-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.6708808,-32.9627524,0
+                -60.6758904,-32.9821387,0
+                -60.6770384,-32.9843615,0
+                -60.6766737,-32.9854232,0
+                -60.6779614,-32.9915071,0
+                -60.6833904,-32.9916158,0
+                -60.6888194,-32.9918683,0
+                -60.6892485,-33.0013706,0
+                -60.6749488,-33.0093162,0
+                -60.6681118,-33.0132095,0
+                -60.6652403,-33.0144363,0
+                -60.6624332,-33.0153032,0
+                -60.6570764,-33.0162092,0
+                -60.6522345,-33.0163953,0
+                -60.6501825,-33.0062565,0
+                -60.6479594,-32.9957578,0
+                -60.6442439,-32.9794213,0
+                -60.6440818,-32.9779803,0
+                -60.6443489,-32.9774034,0
+                -60.6432096,-32.9726498,0
+                -60.6420275,-32.9679321,0
+                -60.6562829,-32.9654646,0
+                -60.6708808,-32.9627524,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>277 - Rosario Echesortu</name>
+      <Placemark>
+        <name>277</name>
+        <styleUrl>#poly-F57C00-5001-59-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.6532038,-32.9657789,0
+                -60.6529163,-32.9645837,0
+                -60.6525966,-32.9633704,0
+                -60.6519194,-32.9608043,0
+                -60.6505898,-32.95558,0
+                -60.6560212,-32.9543736,0
+                -60.6504959,-32.9320781,0
+                -60.6560214,-32.9311085,0
+                -60.6731452,-32.9307108,0
+                -60.6766284,-32.9288394,0
+                -60.6844763,-32.9602896,0
+                -60.6532038,-32.9657789,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+      <Placemark>
+        <name>San Luis 2922</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6637869,-32.9444092,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Córdoba 2275</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6543217,-32.9436673,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Constitución 480</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6729575,-32.9363257,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Callao 931</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6602678,-32.9442168,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>San Juan 3716</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6748973,-32.9436266,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Martín Rodríguez 1601</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6610596,-32.9526189,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Pellegrini 1909</name>
+        <styleUrl>#icon-1899-F57C00-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6522279,-32.955401,0
+          </coordinates>
+        </Point>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>276 - Rosario Oeste</name>
+      <Placemark>
+        <name>Av. Eva Perón 7025</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7169655,-32.9324896,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mendoza 5555</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6992984,-32.9409244,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Córdoba 5753</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7018592,-32.9351233,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Brasil 2196</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7191318,-32.9548243,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mendoza 7735</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7278866,-32.940847,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Provincias Unidas 174</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7133801,-32.9302158,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Bv. Avellaneda 1433</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6808513,-32.94689,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Mendoza 5802</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7023974,-32.9401018,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Eva Perón 5973</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7044935,-32.9347547,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Guatemala 1403</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7169768,-32.9448069,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Blvd. Wilde 508</name>
+        <styleUrl>#icon-1899-795548-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.7389687,-32.9342467,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>276</name>
+        <styleUrl>#poly-795548-3901-69-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.6844548,-32.9602896,0
+                -60.6774652,-32.9321533,0
+                -60.6900792,-32.9311703,0
+                -60.7010543,-32.9320638,0
+                -60.7129737,-32.9328121,0
+                -60.7137223,-32.9200805,0
+                -60.7138695,-32.9150028,0
+                -60.7239727,-32.9151846,0
+                -60.7237464,-32.9205949,0
+                -60.7392146,-32.9209657,0
+                -60.7387439,-32.933173,0
+                -60.738638,-32.9402469,0
+                -60.7381031,-32.9495386,0
+                -60.7220956,-32.948764,0
+                -60.7218803,-32.9541837,0
+                -60.7208066,-32.9596034,0
+                -60.7065902,-32.9592543,0
+                -60.6923312,-32.9586875,0
+                -60.6844548,-32.9602896,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>275 - Rosario Sur II</name>
+      <Placemark>
+        <name>Leiva 6007</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6384025,-32.9915126,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. San Martín 4842</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6474748,-32.9932958,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Castro Barros 4958</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6299042,-32.9950521,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. José Batlle y Ordóñez 836</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6474046,-33.0087842,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. Ntra Sra del Rosario 801</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6170453,-32.9991076,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. San Martín 5602</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6493967,-33.0021003,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>HUB</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6443354,-32.9807785,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>Av. San Martín 5386</name>
+        <styleUrl>#icon-1899-AFB42B-nodesc</styleUrl>
+        <Point>
+          <coordinates>
+            -60.6488886,-32.9995683,0
+          </coordinates>
+        </Point>
+      </Placemark>
+      <Placemark>
+        <name>275</name>
+        <styleUrl>#poly-AFB42B-3701-69-nodesc</styleUrl>
+        <Polygon>
+          <outerBoundaryIs>
+            <LinearRing>
+              <tessellate>1</tessellate>
+              <coordinates>
+                -60.6478085,-32.9952536,0
+                -60.6486201,-32.9988226,0
+                -60.6493675,-33.0023826,0
+                -60.6507765,-33.0095205,0
+                -60.6522345,-33.0163953,0
+                -60.6483267,-33.0162873,0
+                -60.6348912,-33.0157457,0
+                -60.6356409,-33.0118037,0
+                -60.6334386,-33.0102313,0
+                -60.6331958,-33.0090492,0
+                -60.6333822,-33.0080831,0
+                -60.6345568,-33.0039305,0
+                -60.6261939,-33.0035052,0
+                -60.6216263,-33.0038681,0
+                -60.6185822,-33.0014597,0
+                -60.6167879,-33.000781,0
+                -60.6152941,-32.9999944,0
+                -60.612371,-32.9976653,0
+                -60.613022,-32.9957196,0
+                -60.6143596,-32.9941698,0
+                -60.6206095,-32.991133,0
+                -60.6244827,-32.9821087,0
+                -60.6248474,-32.9786752,0
+                -60.622573,-32.9713776,0
+                -60.6420275,-32.9679321,0
+                -60.6443489,-32.9774034,0
+                -60.6440818,-32.9779803,0
+                -60.6442439,-32.9794213,0
+                -60.6478085,-32.9952536,0
+              </coordinates>
+            </LinearRing>
+          </outerBoundaryIs>
+        </Polygon>
+      </Placemark>
+    </Folder>
+    <Folder>
+      <name>INNER LOGISTICS</name>
+      <Placemark>
+        <name>BV. OROÑO Y SAN JUAN ., Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV. OROÑO Y SAN JUAN ., Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MEDICINA ESENCIAL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CATAMARCA 1349, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CATAMARCA 1349, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GRUPO GAMMA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CALLAO 935, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CALLAO 935, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>TERRAZZINO HERNAN ARIEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>27 DE FEBRERO 1152, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>27 DE FEBRERO 1152, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GRUPO BOSCH SOC. COLECTIVA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>San Juan 3034, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>San Juan 3034, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>LA CASA DEL MEDICO MUTUAL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CORNEALENT ROSARIO SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ROCA 2440, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ROCA 2440, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>HOSPITAL PRIVADO DE ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN MARTIN 497 PB, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN MARTIN 497 PB, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FCIA ROGGERO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>EVA PERON 7889, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>EVA PERON 7889, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CESCHIN GABRIELA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JOSE INGENIEROS 866, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JOSE INGENIEROS 866, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA OCK S.R.L.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN JUAN 492, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN JUAN 492, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA MONUMENTO FRANCISCO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>NANNSEN 255, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>NANNSEN 255, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>EASY ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>san luis 2125, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>san luis 2125, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FCIA. LA FARMACITA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>cordoba 2157, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>cordoba 2157, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SALUT MARINA INES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MORENO 1143, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MORENO 1143, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MUT. FEDERADA 25 DE JUNIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SARMIENTO 865, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SARMIENTO 865, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PELOSO MARCELA LEA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LUIS 2101, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LUIS 2101, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA WIRZT</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PTE ROCA 2440, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PTE ROCA 2440, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>HOSPITAL PRIVADO ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LAPRIDA 3868, Rosario</name>
+        <address>LAPRIDA 3868, Rosario</address>
+        <description>DROGUERIA MAFED</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LORENZO 1380, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LORENZO 1380, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ACA (AVALIAN)</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORRIENTES 198, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORRIENTES 198, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA PARQUE CORRIENTES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AV SABIN BIS 476, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>AV SABIN BIS 476, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>TRAVESIA DUAL SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MAIPU 2571, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MAIPU 2571, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>AGUILAR MARIA ALEJANDRA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORVALAN 554, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORVALAN 554, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>NUEVA ERA ROSARIO S.R.L.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 1667, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 1667, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SALUD DEL NUEVO ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 2950, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 2950, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JERARQUICOS ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>laprida 1031, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>laprida 1031, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA ARAUJO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 3987, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 3987, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>VNT SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 1077, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 1077, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>OPTICA SCHELLHAS S.A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GALVEZ 2120, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>GALVEZ 2120, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MENNA CESAR GUILLEMRO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LAPRIDA 1164, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>LAPRIDA 1164, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RAMON ARMANDO ROJAS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>san luis 2493, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>san luis 2493, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANATORIO DE LA MUJER</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GARCIA DEL COSIO 2198 BIS, Rosario </name>
+        <address>GARCIA DEL COSIO 2198 BIS, Rosario </address>
+        <description>SERVICIOS DOMICILIARIOS SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PCIAS UNIDAS 2103, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PCIAS UNIDAS 2103, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>AUTOSERVICIO MAYORISTA LIDER</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PRESIDENTE PERON 4450, Rosario </name>
+        <address>PRESIDENTE PERON 4450, Rosario </address>
+        <description>DROG. COMARSA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>1° DE MAYO 1698, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>1° DE MAYO 1698, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>HANONO PAULA SARA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>DIAZ VELEZ 110, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>DIAZ VELEZ 110, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA ROSFAR S A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Bv. Oroño 450, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Bv. Oroño 450, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>I C R INSTITUTO CARDIOVASCULAR DE ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORODBA 1469, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORODBA 1469, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA DEL SIGLO DE TROSCE LEONARDO HUMBERTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OROÑO 1191, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OROÑO 1191, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FLORES NANCI BIBIANA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>cordoba 1897, Rosario</name>
+        <address>cordoba 1897, Rosario</address>
+        <description>GASPARINI DILVIA LIDIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 2394, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 2394, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>VERNACKT MARIA FLAVIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN MARTIN 97, Rosario</name>
+        <address>SAN MARTIN 97, Rosario</address>
+        <description>FARMACIA ROGGERO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PELLEGRINI 1296, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PELLEGRINI 1296, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>YASPARRA NORMA ALEJANDRA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 2565, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 2565, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA DEL LITORAL S.A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Pellegrini 1195, Rosario</name>
+        <address>Pellegrini 1195, Rosario</address>
+        <description>FARMACIA PELLEGRINI DE CLAUDIO LICATA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LAPRIDA 772, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>LAPRIDA 772, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA DE LA PLAZA DE NASELLO ARIEL ALBERTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN MARTIN 497 PB, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN MARTIN 497 PB, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GINI LAURA E</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 2999, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 2999, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA ABRIATA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>españa 901, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>españa 901, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SARTOR MABEL REGINA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AVENIDA CENTRAL ARGENTINO 270, Rosario</name>
+        <address>AVENIDA CENTRAL ARGENTINO 270, Rosario</address>
+        <description>BRACH JORGELINA NOEMI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>INGENIERO THEDY 158, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>INGENIERO THEDY 158, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>VAIERETTI FABIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MARULL 410, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MARULL 410, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MENENDEZ CARLOS ALBERTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MAR DEL PLATA 183 BIS, Rosario</name>
+        <address>MAR DEL PLATA 183 BIS, Rosario</address>
+        <description>WILD HORACIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PJE DEL PARQUE 260, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PJE DEL PARQUE 260, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GUIDOTTI MIGUEL ANGEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Eva Perón 8055, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Eva Perón 8055, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PISTACCHIA DANIELA VERONI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LAPRIDA 4453, Rosario </name>
+        <address>LAPRIDA 4453, Rosario </address>
+        <description>MODENA DISTRIBUCIONES S.R.L</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 5090, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 5090, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ORLANDO FERNANDEZ SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CALLAO 1342, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CALLAO 1342, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CUELLO TORRES FAUSTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 2456, Rosario </name>
+        <address>ENTRE RIOS 2456, Rosario </address>
+        <description>IRIBARREN SEBASTIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 7727, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 7727, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>EXCELL PHARMA S A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BRASIL 1414, Rosario</name>
+        <address>BRASIL 1414, Rosario</address>
+        <description>DANIEL HECTOR RODRIGUEZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>J. M. GUTIERREZ 2059, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>J. M. GUTIERREZ 2059, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA KELLERHOFF SA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>sarmiento 830, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>sarmiento 830, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BERGESE MONICA DEL VALLE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 1704, Rosario</name>
+        <address>CORDOBA 1704, Rosario</address>
+        <description>RACERA MARIA EUGENIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 721, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 721, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MEBA MUTUAL DE EMPLEADOS BANCARIOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 3145  PA, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 3145  PA, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CUELLO SERGIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN JUAN 2717, Rosario</name>
+        <address>SAN JUAN 2717, Rosario</address>
+        <description>SANTORO LUCIANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 257 2 D, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 257 2 D, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GONZALEZ FABIAN MARCELO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SANCEZ DE BUSTAMANTE 431, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SANCEZ DE BUSTAMANTE 431, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GRACIELA RITA ROMANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>NANSEN 323, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>NANSEN 323, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>LALLI GUSTAVO TEMPONE SANDRA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PRESIDENTE ROCA 1553, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PRESIDENTE ROCA 1553, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA 20 DE JUNIO S.A.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LUIS 2101, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LUIS 2101, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FCIA.WIRZT</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAAVEDRA 2911, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAAVEDRA 2911, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ALEJANDRO EMILIO CALANDRA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AV LIMITE 7571, Rosario</name>
+        <address>AV LIMITE 7571, Rosario</address>
+        <description>TREVISONNO ANDRES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN JOSE PASO 1275, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JUAN JOSE PASO 1275, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BRUNO MARCELO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>URUGUAY 1054, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>URUGUAY 1054, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PHARMICAL RL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>THEDY 158, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>THEDY 158, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BUFFONI ANTONELLA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 1005, ROSARIO</name>
+        <address>MENDOZA 1005, ROSARIO</address>
+        <description>SERRI ANA LAURA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MORENO 1143, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MORENO 1143, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MUTUAL FEDERADA SALUD 25 DE JUNIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN MANUEL DE ROSAS 958, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JUAN MANUEL DE ROSAS 958, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>OBRA SOCIAL PRENSA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ING THEDY 158 BIS,Rosario</name>
+        <address>ING THEDY 158 BIS,Rosario</address>
+        <description>FABIAN VAIRETTI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RUI BARBOSA 374, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RUI BARBOSA 374, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CABRERA CESAR</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MAIPU 1813, Rosario</name>
+        <address>MAIPU 1813, Rosario</address>
+        <description>OREGA MAXIMILIANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MARULL 566, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MARULL 566, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SCHRODER FEDERICO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>san lorenzo 1380, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>san lorenzo 1380, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FCIA. FARMAVA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>FRANCIA 241, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>FRANCIA 241, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>LAURA REGINATTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Bv Oroño y Cordoba s/n, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Bv Oroño y Cordoba s/n, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MEDICINA ESENCIAL S.A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITALIA 424 5, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ITALIA 424 5, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANATORIO NUESTRA SEÑORA DEL ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PEYRREDON 3017, Rosario</name>
+        <address>PEYRREDON 3017, Rosario</address>
+        <description>RUANI HERNAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>FRAY MAMERTO ESQUIU 7310, Rosario</name>
+        <address>FRAY MAMERTO ESQUIU 7310, Rosario</address>
+        <description>GALARZA FERNANDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LINIERS 1872, Rosario</name>
+        <address>LINIERS 1872, Rosario</address>
+        <description>GONZALO CARO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>laprida 1460 5 B, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>laprida 1460 5 B, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CLAUDIA TOVOROVSKY</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Entre Rios 285, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Entre Rios 285, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SOLIDEZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LUIS 1798, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LUIS 1798, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PENNACCHIETTI MARIA ELENA CECILIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 6950, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 6950, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ALICIA MANGIONE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SALTA 2801, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SALTA 2801, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>VILLA GABRIEL ALBERTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LUIS 2493, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LUIS 2493, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PERINAT S.A.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>OSDE ORG SERV D EMP SANATORIO PARQUE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PARAGUAY 975, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PARAGUAY 975, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>AUREA MED S A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIO 801, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIO 801, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BONANSEA CRISTINA MARGARITA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ROULLON 2171 P3 D1, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ROULLON 2171 P3 D1, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARIELA PALACIOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BOULEVARD  RONDEAU 125, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BOULEVARD  RONDEAU 125, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA LAURA GOMEZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BASSI ESPECIALISTAS OPTICOS SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUJUY 2016, Rosario </name>
+        <address>JUJUY 2016, Rosario </address>
+        <description>MARIA MILAGROS PALOM</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANAT PARQUE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SERVANDO BAYO 2453, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SERVANDO BAYO 2453, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA COMARSA S.A.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>NICARAGUA 812, Rosario</name>
+        <address>NICARAGUA 812, Rosario</address>
+        <description>ORSARIA ANDRES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ESPAÑA 1130, Rosario</name>
+        <address>ESPAÑA 1130, Rosario</address>
+        <description>RAIMUNDO SEBASTIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 1782, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 1782, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>EUROPTICA SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 1521, Rosario</name>
+        <address>MENDOZA 1521, Rosario</address>
+        <description>FERRIOL SEBASTIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BAIGORRIA 2332, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BAIGORRIA 2332, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>COLOMBO GUSTAVO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITALIA 865, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ITALIA 865, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GRUPO OPTICO SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN NICOLAS 985, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN NICOLAS 985, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARAZZI ADRIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OCAMPO 3576  GARAGE, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OCAMPO 3576  GARAGE, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MILISENDA CARLOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>EVA PERON 7782, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>EVA PERON 7782, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BATALLA CARINA MARIEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ARIJON  BIS 91, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ARIJON  BIS 91, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RIVERO NEO LIONEL ALCIDES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OCAMPO 3576  GARAGE, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OCAMPO 3576  GARAGE, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>TRUCHI GUSTAVO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SALTA 1247, Rosario </name>
+        <address>SALTA 1247, Rosario </address>
+        <description>CARIGNANO MELINA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN MARTIN 1015, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN MARTIN 1015, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>OPTICA GALLO S.R.L</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV AVELLANEDA 2156, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV AVELLANEDA 2156, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RODRIGUEZ GONZALO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MR. ROSS 1154, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MR. ROSS 1154, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DUCLOS HECTOR RICARDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MAIPU 1999, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MAIPU 1999, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>COMPAÑIA MEDICA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CML PREVENCION</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>EVA PERON 6267, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>EVA PERON 6267, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA CALLAO S.R.L.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 206, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 206, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GUILLERMO RAFE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIOBAMBA 3041, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIOBAMBA 3041, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RUGGERI CARLOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 330, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 330, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>INSTITUTO GAMMA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ALVEAR 863, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ALVEAR 863, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANATORIO DE NIÑOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 638 </name>
+        <address>ENTRE RIOS 638 </address>
+        <description>FLORES HERRERA JOAQUIN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>NICARAGUA 683 BIS, Rosario</name>
+        <address>NICARAGUA 683 BIS, Rosario</address>
+        <description>DROGUERIA LIDER</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 1960, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 1960, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MEDIC VET S R L</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN PABLO II 952, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JUAN PABLO II 952, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PLANTA INNER</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CALLAO 2712, Rosario</name>
+        <address>CALLAO 2712, Rosario</address>
+        <description>FARMACIA PREVENIR</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Alvarez Condarco 327BIS, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Alvarez Condarco 327BIS, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>COMPAÑIA FARMACEUTICA S R L</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN LUIS 1554, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN LUIS 1554, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PATERNO VIVIANA SOLEDAD</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>DORREGO 817, Rosario</name>
+        <address>DORREGO 817, Rosario</address>
+        <description>BOZZINI ANDREA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Alvear 863, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Alvear 863, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARTIN FERRATI ALBERTINA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITUZANGO 640, Rosario</name>
+        <address>ITUZANGO 640, Rosario</address>
+        <description>DR RODRIGUEZ MANUEL EDGARDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BRASIL 640, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BRASIL 640, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BELEN CESPEDES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AV. URIBURU 1923, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>AV. URIBURU 1923, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA KELLERHOFF S.A HOSPITALARIOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Bv  OROÑO 2609, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Bv  OROÑO 2609, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>OLMEDO MIGUEL ANGEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SEBASTIAN CARABALLO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PARAGUAY 886, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PARAGUAY 886, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SOY LOLA S.A.</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GENOVA 9242, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>GENOVA 9242, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JUAN INGNACIO MAGARINOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITALIA 645, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ITALIA 645, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARTIN DEL LABARBA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>27 de febrero 3734, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>27 de febrero 3734, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SOY LOLA ( PARODI )</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CHUBUT 7122, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CHUBUT 7122, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MAURO BOTELLO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV OROÑO 4624, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV OROÑO 4624, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FACUNDO CORSZO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 1452, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 1452, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARCOS FASCIANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PJE.ARATA 9157, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PJE.ARATA 9157, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SAN DAMASO SOLEDAD</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ALVEAR 3085, Rosario</name>
+        <address>ALVEAR 3085, Rosario</address>
+        <description>CASSINI JORGE</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIOJA 5353, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIOJA 5353, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PASSAGLIA ALDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>VELEZ SARFIELD 372, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>VELEZ SARFIELD 372, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RAFAEL GALLEGO SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>FRAGA 627, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>FRAGA 627, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JULIETA ARCAS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PELLEGRINI 420 2 B, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PELLEGRINI 420 2 B, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ROMINA RIPACOLLI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PELLEGRINI 1795  01, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PELLEGRINI 1795  01, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CUBO DIANA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GUEMES 1956, Rosario</name>
+        <address>GUEMES 1956, Rosario</address>
+        <description>LUCAS ARRIOLA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITALIA 132 P6 DEP B, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ITALIA 132 P6 DEP B, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ANTONELLA MAZZEO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIOJA 2757, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIOJA 2757, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CAROLINA MONTEJANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN B JUSTO 8818, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JUAN B JUSTO 8818, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ALINA PASSINIS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 7799, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 7799, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DARK S.R.L</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GARZON 830, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>GARZON 830, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>EMILSE RIOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MITRE 475 P12 DEP B, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MITRE 475 P12 DEP B, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>LORENA VILLARUEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ALEM 2528, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ALEM 2528, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JUAN PABLO BERISTAIN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 1517, Rosario (sta.fe)</name>
+        <address>MENDOZA 1517, Rosario (sta.fe)</address>
+        <description>SOUZA ANDREA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AV CENTRAL ARGENTINO 180 6 2, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>AV CENTRAL ARGENTINO 180 6 2, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FEDERICO ARIEL LAVINIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CARBIA 802, Rosario (sta.fe)</name>
+        <address>CARBIA 802, Rosario (sta.fe)</address>
+        <description>IGNACIO VALVASONI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BOLIVIA 106, Rosario (sta.fe)</name>
+        <address>BOLIVIA 106, Rosario (sta.fe)</address>
+        <description>FEDERICO ECHEVERRIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GUEMES 1875, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>GUEMES 1875, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ALARCON MARCELO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 590, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 590, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARIA MACARENA MILILLO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PASAJE ALPATACAL 730, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PASAJE ALPATACAL 730, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SAINZ MARTIN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN JUAN 2717, Rosario </name>
+        <address>SAN JUAN 2717, Rosario </address>
+        <description>MARTINEZ DIEGO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JOAQUIN V. GONZALEZ 1280 BIS, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JOAQUIN V. GONZALEZ 1280 BIS, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DE FILIPPO GUSTAVO ADOLFO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ALVEAR 863, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ALVEAR 863, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>I A P O S INST. AUTARQUICO PROVINCIAL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>TIMBO 8830, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>TIMBO 8830, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RODOLFO FABIANI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PASCO 3841, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PASCO 3841, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>YAMILA NUÑEZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JORGE HARDING 1340, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JORGE HARDING 1340, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARIA JOSE ARES</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>URQUIZA 2034, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>URQUIZA 2034, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JOSE MARIA MORENO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV OROÑO 319 , Rosario </name>
+        <address>BV OROÑO 319 , Rosario </address>
+        <description>VANINA VARGAS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ITALIA 1550 PISO 3 DTO B, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ITALIA 1550 PISO 3 DTO B, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PAULA JIMENA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MITRE 523, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BASSI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORDOBA 2950, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORDOBA 2950, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JERARQUICOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CASTELLANOS 1119, Rosario</name>
+        <address>CASTELLANOS 1119, Rosario</address>
+        <description>FIGUEREDO SEBASTIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MORENO 1222, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MORENO 1222, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MUTUAL FEDERADA 25 DE JUNIO SOCIEDAD DE PROTECCION</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN MANUEL DE ROSAS 878, Rosario </name>
+        <address>JUAN MANUEL DE ROSAS 878, Rosario </address>
+        <description>FOGLIA ALFREDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CAMPBELL 1354, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CAMPBELL 1354, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>AGUILAR HECTOR</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>FRENCH 1289, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>FRENCH 1289, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARIA VICTORIA  RABITO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ERNESTO PALACIO 9274, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ERNESTO PALACIO 9274, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>AGROGANADERA LOS TILOS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SARMIENTO 3150, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SARMIENTO 3150, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>IAPOS INST AUTARQUICO PCIAL DE OBRA SOCIAL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>DORREGO 48, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>DORREGO 48, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SUAREZ MATIAS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RONDEAU 3524, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RONDEAU 3524, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ALMAREZ SA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV OROÑO 860, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANATORIO PARQUE S A</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GARZON 1664, Rosario </name>
+        <address>GARZON 1664, Rosario </address>
+        <description>MARCHI ANALIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CALLAO 935, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CALLAO 935, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA TERRAZZINO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PARAGUAY 952, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PARAGUAY 952, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA DEL SOL DE D ANGELO GRACIELA LILIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BELGRANO 740 PISO 11, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BELGRANO 740 PISO 11, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>RAUL FLORENTINO IGLESIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>FRANCIA 3648, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>FRANCIA 3648, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MOYANO RUBEN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MENDOZA 257 9 D, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MENDOZA 257 9 D, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ECHEVERRIA FLORENCIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>12 de octubre 870, Rosario</name>
+        <address>12 de octubre 870, Rosario</address>
+        <description>MARTINEZ DIEGO PABLO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CULLEN 1585, Rosario </name>
+        <address>CULLEN 1585, Rosario </address>
+        <description>GRACIELA ADELINA JOSEFA CALLARAMI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ESPAÑA 212, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ESPAÑA 212, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FERRONI CARLOS ALBERTO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIOJA 1541, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIOJA 1541, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SANATORIO AMERICANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BAHIA BLANCA 517, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BAHIA BLANCA 517, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>TORRE MARCELO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GALVEZ 3366, Rosario</name>
+        <address>GALVEZ 3366, Rosario</address>
+        <description>GUSTAVO ARIEL MENENDEZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>laprida 4453, Rosario</name>
+        <address>laprida 4453, Rosario</address>
+        <description>MODENA DISTRIBUCIONES SRL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OROÑO 1093, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CARABALLO SEBASTIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV OROÑO 949, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BV OROÑO 949, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FILIAL ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AYACUCHO 1977 , Rosario </name>
+        <address>AYACUCHO 1977 , Rosario </address>
+        <description>BIANCHI MAXIMILIANO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>entre rios 1185, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>entre rios 1185, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARTELLI MARIA GABRIELA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BUENOS AIRES 2946, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BUENOS AIRES 2946, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MILICI FABRIZIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PRUSIA 6935, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PRUSIA 6935, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>CRISTIAN CESAR DELLA BIANCA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LA REPUBLICA 8587, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>LA REPUBLICA 8587, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JONATAN GIRONELLI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AMBROSETTI 153, Rosario</name>
+        <address>AMBROSETTI 153, Rosario</address>
+        <description>NAVETTA ARIEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>PASAJE AMADO NERVO 1670, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>PASAJE AMADO NERVO 1670, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>GOMEZ GUILLERMO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>h. de la quiuntana 1137, Rosario </name>
+        <address>h. de la quiuntana 1137, Rosario </address>
+        <description>ALDASORO GUSTAVO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ENTRE RIOS 2759, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ENTRE RIOS 2759, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>LUCAS MUT</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>DORREGO 24 1 A, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>DORREGO 24 1 A, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>NICOLAS COPPARI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>VALPARAISO 1588, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>VALPARAISO 1588, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SUAREZ SERGIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AV. PELLEGRINI 3921, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>AV. PELLEGRINI 3921, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>STRINGHINI HUGO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BUENOS AIRES 6667, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>BUENOS AIRES 6667, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>TREJO LUIS ALEJO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>LAPRIDA 1089 1, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>LAPRIDA 1089 1, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FENOGLIO ESTEBAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ROCA 1553, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ROCA 1553, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DROGUERIA 20 DE JUNIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>garibaldi 1319, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>garibaldi 1319, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>DERCOLE ROMINA NATALIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CHUBUT 5632, Rosario (sta.fe)</name>
+        <address>CHUBUT 5632, Rosario (sta.fe)</address>
+        <description>ROMERO MATIAS</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>MITRE 3780, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>MITRE 3780, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MOREYRA VICTOR</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIO DE JANEIRO 880, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIO DE JANEIRO 880, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>VELASCO OMAR</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>27 DE FEBRERO 2878, Rosario</name>
+        <address>27 DE FEBRERO 2878, Rosario</address>
+        <description>FERRERO CRISTIAN ELIAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>JUAN MANUEL DE ROSA 958, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>JUAN MANUEL DE ROSA 958, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>PRENSA DE ROSARIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OLIVE 1099, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OLIVE 1099, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ARTEAGA MELINA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CRESPO 2472, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CRESPO 2472, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>JORGE SERGIO RAMIREZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>Mendoza 4903, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>Mendoza 4903, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>SALA GABRIELA ANDREA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AYACUCHO 2095, Rosario (sta.fe)</name>
+        <address>AYACUCHO 2095, Rosario (sta.fe)</address>
+        <description>AIMARETTI ERICA RAQUEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>SAN MARTIN 3110, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>SAN MARTIN 3110, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ORLANDI SILVINA CLAUDIA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>VELEZ SARSFIELD 731, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>VELEZ SARSFIELD 731, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MENENDEZ CAMILA</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>BV. OROÑO 3207, Rosario (sta.fe)</name>
+        <address>BV. OROÑO 3207, Rosario (sta.fe)</address>
+        <description>FARMACIA ROMERO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CASIANO CASAS 1284, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CASIANO CASAS 1284, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>FARMACIA GIOVINAZZO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OLIVE 1338, Rosario (sta.fe)</name>
+        <address>OLIVE 1338, Rosario (sta.fe)</address>
+        <description>PAZ ARIEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>GUEMES 2047, Rosario </name>
+        <address>GUEMES 2047, Rosario </address>
+        <description>TRAVERSO JULIO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OVIDIO LAGOS 522, Rosario</name>
+        <address>OVIDIO LAGOS 522, Rosario</address>
+        <description>METOZZI GERMAN</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>WILDE 271, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>WILDE 271, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>MARIA ESTHER BLESI</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>ANGEL PIAGGIO 464, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>ANGEL PIAGGIO 464, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>REITTER ARNOLD SUIGO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>OVIDIOS LAGOS 522, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>OVIDIOS LAGOS 522, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BILBAO LEONARDO</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>CORRIENTES 450, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>CORRIENTES 450, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>ASOC.EMPLEADOS DE COMERCIO-FCIA.SINDICAL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>AYACUCHO 5380, Rosario (sta.fe)</name>
+        <address>AYACUCHO 5380, Rosario (sta.fe)</address>
+        <description>CECCARELLI BIBIANA BEATRIZ</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+      <Placemark>
+        <name>RIOBAMBA 250, Rosario (sta.fe), SANTA FE, Argentina</name>
+        <address>RIOBAMBA 250, Rosario (sta.fe), SANTA FE, Argentina</address>
+        <description>BARRA PABLO ANGEL</description>
+        <styleUrl>#icon-1899-757575</styleUrl>
+      </Placemark>
+    </Folder>
+  </Document>
+</kml>
