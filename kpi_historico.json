@@ -1,0 +1,125 @@
+{
+  "2026-02-20": {
+    "choferes_pendientes": 33,
+    "hdr_pendientes": 66,
+    "total": 377,
+    "entregadas": 210,
+    "pct_entregado": 55.7,
+    "detalle": {
+      "AGUILERA JESUS LEONEL": {
+        "total": 11,
+        "entregadas": 10,
+        "pendientes": 1,
+        "hrs": 1
+      },
+      "ANGULO DIEGO": {
+        "total": 11,
+        "entregadas": 9,
+        "pendientes": 2,
+        "hrs": 1
+      },
+      "CANAVO, CRISTIAN MARTIN": {
+        "total": 9,
+        "entregadas": 5,
+        "pendientes": 4,
+        "hrs": 1
+      },
+      "CAPPUCCIO JOSE ANGEL": {
+        "total": 18,
+        "entregadas": 14,
+        "pendientes": 4,
+        "hrs": 2
+      },
+      "DATTO ACTIS ADRIAN": {
+        "total": 96,
+        "entregadas": 95,
+        "pendientes": 1,
+        "hrs": 1
+      },
+      "EREZUMA MARTIN": {
+        "total": 29,
+        "entregadas": 24,
+        "pendientes": 4,
+        "hrs": 4
+      },
+      "FLAMENCO DAMIAN EZEQUIEL": {
+        "total": 1,
+        "entregadas": 0,
+        "pendientes": 1,
+        "hrs": 1
+      },
+      "GARCIA SEBASTIAN": {
+        "total": 6,
+        "entregadas": 0,
+        "pendientes": 6,
+        "hrs": 3
+      },
+      "JUAN JOSE CISNEROS": {
+        "total": 46,
+        "entregadas": 13,
+        "pendientes": 32,
+        "hrs": 4
+      },
+      "MARTINEZ MARCOS": {
+        "total": 3,
+        "entregadas": 0,
+        "pendientes": 3,
+        "hrs": 3
+      },
+      "MARTINUCCI HUGO": {
+        "total": 8,
+        "entregadas": 6,
+        "pendientes": 2,
+        "hrs": 2
+      },
+      "PERRETTA ROMINA": {
+        "total": 20,
+        "entregadas": 0,
+        "pendientes": 19,
+        "hrs": 4
+      },
+      "PRADO WILBER": {
+        "total": 4,
+        "entregadas": 0,
+        "pendientes": 4,
+        "hrs": 1
+      },
+      "RAMIREZ MIGUEL": {
+        "total": 5,
+        "entregadas": 3,
+        "pendientes": 2,
+        "hrs": 2
+      },
+      "RODRIGUEZ PABLO MARIANO": {
+        "total": 22,
+        "entregadas": 18,
+        "pendientes": 4,
+        "hrs": 3
+      },
+      "ROMERO CLAUDIO": {
+        "total": 1,
+        "entregadas": 0,
+        "pendientes": 1,
+        "hrs": 1
+      },
+      "SANGUINETTI CRISTIAN ALBERTO": {
+        "total": 13,
+        "entregadas": 0,
+        "pendientes": 13,
+        "hrs": 2
+      },
+      "SCHUMAKER JONATAN": {
+        "total": 9,
+        "entregadas": 0,
+        "pendientes": 9,
+        "hrs": 4
+      },
+      "WENK MARCOS": {
+        "total": 4,
+        "entregadas": 0,
+        "pendientes": 3,
+        "hrs": 3
+      }
+    }
+  }
+}

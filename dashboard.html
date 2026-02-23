@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INNER LOGISTICS · Dashboard</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;900&family=Barlow:wght@300;400;500&display=swap');
+
+  :root {
+    --bg: #080c14;
+    --surface: #0e1520;
+    --surface2: #131d2e;
+    --border: rgba(255,255,255,0.07);
+    --accent: #FACC15;
+    --green: #4ADE80;
+    --red: #F87171;
+    --blue: #38BDF8;
+    --text: #e2e8f0;
+    --muted: #64748b;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Barlow', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Grid background */
+  body::before {
+    content: '';
+    position: fixed; inset: 0; z-index: 0;
+    background-image:
+      linear-gradient(rgba(250,204,21,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(250,204,21,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+    pointer-events: none;
+  }
+
+  .wrapper { position: relative; z-index: 1; max-width: 1400px; margin: 0 auto; padding: 24px 20px; }
+
+  /* Header */
+  header {
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 0 24px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 28px;
+  }
+  .logo { display: flex; align-items: center; gap: 14px; }
+  .logo-icon {
+    width: 44px; height: 44px; background: var(--accent);
+    border-radius: 10px; display: flex; align-items: center; justify-content: center;
+    font-size: 22px;
+  }
+  .logo-text { font-family: 'Barlow Condensed', sans-serif; font-weight: 900; font-size: 1.5rem; letter-spacing: 0.05em; }
+  .logo-text span { color: var(--accent); }
+  .header-right { display: flex; align-items: center; gap: 12px; }
+  .upload-btn {
+    background: var(--accent); color: #000; font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em;
+    border: none; border-radius: 8px; padding: 10px 20px; cursor: pointer;
+    transition: opacity 0.2s;
+  }
+  .upload-btn:hover { opacity: 0.85; }
+  #upload-input { display: none; }
+  .date-badge {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 8px 14px;
+    font-size: 0.82rem; color: var(--muted);
+  }
+  .date-badge strong { color: var(--text); }
+
+  /* Date filter bar */
+  .filter-bar {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 24px;
+    flex-wrap: wrap;
+  }
+  .filter-label { font-size: 0.8rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; }
+  .date-pill {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 20px; padding: 6px 14px; font-size: 0.82rem;
+    cursor: pointer; transition: all 0.15s; color: var(--muted);
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 600; letter-spacing: 0.03em;
+  }
+  .date-pill:hover { border-color: var(--accent); color: var(--accent); }
+  .date-pill.active { background: var(--accent); color: #000; border-color: var(--accent); }
+
+  /* KPI row */
+  .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+  .kpi-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px 18px;
+    position: relative; overflow: hidden;
+    transition: transform 0.15s;
+  }
+  .kpi-card:hover { transform: translateY(-2px); }
+  .kpi-card::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--accent-color, var(--accent));
+  }
+  .kpi-label { font-size: 0.75rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+  .kpi-value {
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 900;
+    font-size: 3rem; line-height: 1; color: var(--kpi-color, white);
+  }
+  .kpi-sub { font-size: 0.75rem; color: var(--muted); margin-top: 6px; }
+
+  /* Charts grid */
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 24px; }
+  .chart-full { grid-column: 1 / -1; }
+  .chart-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px;
+  }
+  .chart-title {
+    font-family: 'Barlow Condensed', sans-serif; font-weight: 700;
+    font-size: 1rem; letter-spacing: 0.05em; color: var(--text);
+    margin-bottom: 16px; text-transform: uppercase;
+  }
+  .chart-title span { color: var(--muted); font-weight: 400; font-size: 0.82rem; text-transform: none; letter-spacing: 0; margin-left: 8px; }
+  canvas { max-width: 100%; }
+
+  /* Driver table */
+  .table-card {
+    background: var(--surface); border: 1px solid var(--border);
+    border-radius: 14px; padding: 20px; margin-bottom: 24px;
+  }
+  .table-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; }
+  .search-input {
+    background: var(--surface2); border: 1px solid var(--border);
+    border-radius: 8px; padding: 7px 12px; color: var(--text); font-size: 0.85rem;
+    outline: none; width: 200px; font-family: 'Barlow', sans-serif;
+  }
+  .search-input:focus { border-color: var(--accent); }
+  table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+  th { text-align: left; padding: 8px 12px; color: var(--muted); font-weight: 500; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; border-bottom: 1px solid var(--border); }
+  td { padding: 10px 12px; border-bottom: 1px solid var(--border); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--surface2); }
+  .pct-badge {
+    display: inline-block; padding: 2px 10px; border-radius: 20px;
+    font-weight: 700; font-size: 0.8rem;
+  }
+  .pct-green { background: rgba(74,222,128,0.15); color: var(--green); }
+  .pct-red { background: rgba(248,113,113,0.15); color: var(--red); }
+  .mini-bar { height: 6px; border-radius: 3px; background: var(--border); margin-top: 4px; }
+  .mini-bar-fill { height: 100%; border-radius: 3px; }
+
+  /* Export btn */
+  .fullscreen-btn {
+    background: transparent; border: 1px solid var(--accent);
+    color: var(--accent); font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em;
+    border-radius: 8px; padding: 8px 14px; cursor: pointer; transition: all 0.15s;
+  }
+  .fullscreen-btn:hover { background: var(--accent); color: #000; }
+  :fullscreen body, :-webkit-full-screen body, :-moz-full-screen body {
+    overflow-y: auto;
+  }
+  .export-btn {
+    background: transparent; border: 1px solid var(--accent);
+    color: var(--accent); font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em;
+    border-radius: 8px; padding: 8px 16px; cursor: pointer; transition: all 0.15s;
+  }
+  .export-btn:hover { background: var(--accent); color: #000; }
+
+  /* Empty state */
+  .empty-state {
+    text-align: center; padding: 60px 20px; color: var(--muted);
+  }
+  .empty-state .icon { font-size: 48px; margin-bottom: 12px; }
+  .empty-state p { font-size: 0.9rem; }
+
+  /* Trend sparkline label */
+  .trend-up { color: var(--green); }
+  .trend-down { color: var(--red); }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .kpi-row { grid-template-columns: repeat(2, 1fr); }
+    .charts-grid { grid-template-columns: 1fr; }
+    .chart-full { grid-column: 1; }
+  }
+</style>
+</head>
+<body>
+<div class="wrapper">
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🚛</div>
+      <div>
+        <div class="logo-text">INNER <span>LOGISTICS</span></div>
+        <div style="font-size:0.75rem; color:var(--muted);">Panel de Operaciones · KPI Dashboard</div>
+      </div>
+    </div>
+    <div class="header-right">
+      <div class="date-badge" id="current-date-badge">Sin datos cargados</div>
+      <button class="fullscreen-btn" onclick="toggleFullscreen()" id="fs-btn">⛶ Pantalla completa</button>
+      <button class="upload-btn" onclick="document.getElementById('upload-input').click()">
+        ↑ Cargar JSON
+      </button>
+      <input type="file" id="upload-input" accept=".json" onchange="loadJSON(event)">
+    </div>
+  </header>
+
+  <!-- Date filter -->
+  <div class="filter-bar" id="filter-bar" style="display:none">
+    <span class="filter-label">Fecha:</span>
+    <div id="date-pills"></div>
+  </div>
+
+  <!-- KPI Cards -->
+  <div class="kpi-row" id="kpi-row">
+    <div class="kpi-card" style="--accent-color: var(--muted)">
+      <div class="kpi-label">Choferes con pendientes</div>
+      <div class="kpi-value" style="color:var(--muted)">—</div>
+      <div class="kpi-sub">Cargá el historial para ver datos</div>
+    </div>
+    <div class="kpi-card" style="--accent-color: var(--muted)">
+      <div class="kpi-label">HRs pendientes</div>
+      <div class="kpi-value" style="color:var(--muted)">—</div>
+    </div>
+    <div class="kpi-card" style="--accent-color: var(--muted)">
+      <div class="kpi-label">% Entregado</div>
+      <div class="kpi-value" style="color:var(--muted)">—</div>
+    </div>
+    <div class="kpi-card" style="--accent-color: var(--muted)">
+      <div class="kpi-label">Total entregas</div>
+      <div class="kpi-value" style="color:var(--muted)">—</div>
+    </div>
+  </div>
+
+  <!-- Charts -->
+  <div class="charts-grid">
+    <div class="chart-card chart-full">
+      <div class="chart-title">Tendencia histórica <span>% entregado · HRs pendientes</span></div>
+      <canvas id="trendChart" height="100"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Entregas vs Pendientes <span>por chofer · día seleccionado</span></div>
+      <canvas id="barChart" height="180"></canvas>
+    </div>
+    <div class="chart-card">
+      <div class="chart-title">Distribución del día <span>donut</span></div>
+      <canvas id="donutChart" height="180"></canvas>
+    </div>
+  </div>
+
+  <!-- Driver table -->
+  <div class="table-card">
+    <div class="table-header">
+      <div class="chart-title" style="margin:0">Detalle por chofer</div>
+      <div style="display:flex; gap:10px; align-items:center;">
+        <input class="search-input" id="search-input" placeholder="🔍 Buscar chofer..." oninput="filterTable()">
+        <button class="export-btn" onclick="exportCSV()">↓ CSV</button>
+      </div>
+    </div>
+    <table id="driver-table">
+      <thead>
+        <tr>
+          <th>Chofer</th>
+          <th>HRs</th>
+          <th>Total</th>
+          <th>Entregadas</th>
+          <th>Pendientes</th>
+          <th>% Entregado</th>
+          <th>Progreso</th>
+        </tr>
+      </thead>
+      <tbody id="driver-tbody">
+        <tr><td colspan="7" style="text-align:center; color:var(--muted); padding:30px">
+          Cargá el archivo <strong>kpi_historico.json</strong> para ver el dashboard completo
+        </td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<script>
+// ── State ──────────────────────────────────────────────────────────────────
+let historico = {};
+let selectedDate = null;
+let charts = {};
+let allDriverRows = [];
+
+// ── Fullscreen ─────────────────────────────────────────────────────────────
+function toggleFullscreen() {
+  const el = document.documentElement;
+  const btn = document.getElementById('fs-btn');
+  if (!document.fullscreenElement && !document.webkitFullscreenElement) {
+    (el.requestFullscreen || el.webkitRequestFullscreen || el.mozRequestFullScreen).call(el);
+    btn.textContent = '✕ Salir';
+  } else {
+    (document.exitFullscreen || document.webkitExitFullscreen || document.mozCancelFullScreen).call(document);
+    btn.textContent = '⛶ Pantalla completa';
+  }
+}
+document.addEventListener('fullscreenchange', () => {
+  const btn = document.getElementById('fs-btn');
+  if (btn) btn.textContent = document.fullscreenElement ? '✕ Salir' : '⛶ Pantalla completa';
+});
+
+// ── Load JSON ──────────────────────────────────────────────────────────────
+function loadJSON(event) {
+  const file = event.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    try {
+      historico = JSON.parse(e.target.result);
+      const dates = Object.keys(historico).sort();
+      if (!dates.length) return alert('El archivo no tiene registros.');
+      selectedDate = dates[dates.length - 1];
+      renderAll();
+    } catch { alert('Archivo JSON inválido.'); }
+  };
+  reader.readAsText(file);
+}
+
+// ── Render everything ──────────────────────────────────────────────────────
+function renderAll() {
+  renderDatePills();
+  renderKPIs();
+  renderTrendChart();
+  renderBarChart();
+  renderDonutChart();
+  renderTable();
+}
+
+// ── Date pills ─────────────────────────────────────────────────────────────
+function renderDatePills() {
+  const bar = document.getElementById('filter-bar');
+  const container = document.getElementById('date-pills');
+  bar.style.display = 'flex';
+  const dates = Object.keys(historico).sort().reverse();
+  container.innerHTML = dates.map(d => {
+    const label = d.split('-').reverse().join('/');
+    return `<span class="date-pill ${d === selectedDate ? 'active' : ''}"
+      onclick="selectDate('${d}')">${label}</span>`;
+  }).join('');
+  document.getElementById('current-date-badge').innerHTML =
+    `Fecha: <strong>${selectedDate.split('-').reverse().join('/')}</strong>`;
+}
+
+function selectDate(d) {
+  selectedDate = d;
+  renderDatePills();
+  renderKPIs();
+  renderBarChart();
+  renderDonutChart();
+  renderTable();
+}
+
+// ── KPI Cards ──────────────────────────────────────────────────────────────
+function renderKPIs() {
+  const reg = historico[selectedDate];
+  if (!reg) return;
+  const pct = reg.pct_entregado;
+  const pctColor = pct >= 90 ? 'var(--green)' : 'var(--red)';
+  const pctAccent = pct >= 90 ? 'var(--green)' : 'var(--red)';
+
+  // Trend vs previous day
+  const dates = Object.keys(historico).sort();
+  const idx = dates.indexOf(selectedDate);
+  const prev = idx > 0 ? historico[dates[idx-1]] : null;
+  const trendPct = prev ? (pct - prev.pct_entregado).toFixed(1) : null;
+  const trendArrow = trendPct === null ? '' : trendPct >= 0
+    ? `<span class="trend-up">▲ ${trendPct}%</span>`
+    : `<span class="trend-down">▼ ${Math.abs(trendPct)}%</span>`;
+
+  document.getElementById('kpi-row').innerHTML = `
+    <div class="kpi-card" style="--accent-color: var(--accent)">
+      <div class="kpi-label">Choferes con pendientes</div>
+      <div class="kpi-value">${reg.choferes_pendientes}</div>
+      <div class="kpi-sub">choferes activos con deuda</div>
+    </div>
+    <div class="kpi-card" style="--accent-color: var(--red)">
+      <div class="kpi-label">HRs pendientes</div>
+      <div class="kpi-value" style="color:white">${reg.hdr_pendientes}</div>
+      <div class="kpi-sub">hojas de ruta sin completar</div>
+    </div>
+    <div class="kpi-card" style="--accent-color:${pctAccent}">
+      <div class="kpi-label">% Entregado</div>
+      <div class="kpi-value" style="color:${pctColor}">${pct}%</div>
+      <div class="kpi-sub">${trendArrow || 'sin dato previo'}</div>
+    </div>
+    <div class="kpi-card" style="--accent-color: var(--blue)">
+      <div class="kpi-label">Total entregas</div>
+      <div class="kpi-value" style="color:white">${reg.total}</div>
+      <div class="kpi-sub">${reg.entregadas} entregadas · ${reg.total - reg.entregadas} pendientes</div>
+    </div>`;
+}
+
+// ── Trend Chart ────────────────────────────────────────────────────────────
+function renderTrendChart() {
+  const dates = Object.keys(historico).sort();
+  const labels = dates.map(d => d.split('-').slice(1).reverse().join('/'));
+  const pcts = dates.map(d => historico[d].pct_entregado);
+  const pendientes = dates.map(d => historico[d].hdr_pendientes);
+
+  if (charts.trend) charts.trend.destroy();
+  const ctx = document.getElementById('trendChart').getContext('2d');
+  charts.trend = new Chart(ctx, {
+    type: 'line',
+    data: {
+      labels,
+      datasets: [
+        {
+          label: '% Entregado',
+          data: pcts, yAxisID: 'y1',
+          borderColor: '#FACC15', backgroundColor: 'rgba(250,204,21,0.08)',
+          borderWidth: 2.5, pointRadius: 5, pointBackgroundColor: pcts.map(p => p >= 90 ? '#4ADE80' : '#F87171'),
+          pointBorderColor: '#000', pointBorderWidth: 1.5,
+          tension: 0.3, fill: true
+        },
+        {
+          label: 'HRs Pendientes',
+          data: pendientes, yAxisID: 'y2',
+          borderColor: '#F87171', backgroundColor: 'transparent',
+          borderWidth: 2, borderDash: [5,3],
+          pointRadius: 4, pointBackgroundColor: '#F87171',
+          tension: 0.3
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      interaction: { mode: 'index', intersect: false },
+      plugins: {
+        legend: { labels: { color: '#94a3b8', font: { family: 'Barlow', size: 12 } } },
+        tooltip: { backgroundColor: '#0e1520', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1 }
+      },
+      scales: {
+        x: { grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b' } },
+        y1: { position: 'left', min: 0, max: 100,
+          grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b', callback: v => v + '%' } },
+        y2: { position: 'right', grid: { display: false }, ticks: { color: '#64748b' } }
+      }
+    }
+  });
+}
+
+// ── Bar Chart ──────────────────────────────────────────────────────────────
+function renderBarChart() {
+  const reg = historico[selectedDate];
+  if (!reg || !reg.detalle) return;
+  const drivers = Object.entries(reg.detalle).sort((a,b) => b[1].pendientes - a[1].pendientes);
+  const labels = drivers.map(([n]) => n.split(' ').slice(0,2).join(' '));
+  const entregadas = drivers.map(([,d]) => d.entregadas);
+  const pendientes = drivers.map(([,d]) => d.pendientes);
+
+  if (charts.bar) charts.bar.destroy();
+  const ctx = document.getElementById('barChart').getContext('2d');
+  charts.bar = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels,
+      datasets: [
+        { label: 'Entregadas', data: entregadas, backgroundColor: 'rgba(74,222,128,0.75)', borderRadius: 4 },
+        { label: 'Pendientes', data: pendientes, backgroundColor: 'rgba(248,113,113,0.75)', borderRadius: 4 }
+      ]
+    },
+    options: {
+      responsive: true,
+      plugins: {
+        legend: { labels: { color: '#94a3b8', font: { size: 11 } } },
+        tooltip: { backgroundColor: '#0e1520', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1 }
+      },
+      scales: {
+        x: { stacked: true, grid: { display: false }, ticks: { color: '#64748b', font: { size: 10 } } },
+        y: { stacked: true, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#64748b' } }
+      }
+    }
+  });
+}
+
+// ── Donut Chart ────────────────────────────────────────────────────────────
+function renderDonutChart() {
+  const reg = historico[selectedDate];
+  if (!reg) return;
+  const pend = reg.total - reg.entregadas;
+
+  if (charts.donut) charts.donut.destroy();
+  const ctx = document.getElementById('donutChart').getContext('2d');
+  charts.donut = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['Entregadas', 'Pendientes'],
+      datasets: [{
+        data: [reg.entregadas, pend],
+        backgroundColor: ['rgba(74,222,128,0.8)', 'rgba(248,113,113,0.8)'],
+        borderColor: ['#4ADE80', '#F87171'],
+        borderWidth: 1.5, hoverOffset: 6
+      }]
+    },
+    options: {
+      responsive: true, cutout: '70%',
+      plugins: {
+        legend: { position: 'bottom', labels: { color: '#94a3b8', padding: 16, font: { size: 12 } } },
+        tooltip: { backgroundColor: '#0e1520', borderColor: 'rgba(255,255,255,0.1)', borderWidth: 1 }
+      }
+    },
+    plugins: [{
+      id: 'center-text',
+      afterDraw(chart) {
+        const { ctx, chartArea: { top, bottom, left, right } } = chart;
+        const cx = (left + right) / 2, cy = (top + bottom) / 2;
+        ctx.save();
+        ctx.textAlign = 'center'; ctx.textBaseline = 'middle';
+        const pct = reg.pct_entregado;
+        ctx.font = 'bold 28px Barlow Condensed';
+        ctx.fillStyle = pct >= 90 ? '#4ADE80' : '#F87171';
+        ctx.fillText(pct + '%', cx, cy - 8);
+        ctx.font = '12px Barlow';
+        ctx.fillStyle = '#64748b';
+        ctx.fillText('entregado', cx, cy + 16);
+        ctx.restore();
+      }
+    }]
+  });
+}
+
+// ── Driver Table ───────────────────────────────────────────────────────────
+function renderTable() {
+  const reg = historico[selectedDate];
+  if (!reg || !reg.detalle) return;
+  allDriverRows = Object.entries(reg.detalle).map(([nombre, d]) => {
+    const pct = d.total > 0 ? Math.round(d.entregadas / d.total * 100) : 0;
+    return { nombre, ...d, pct };
+  }).sort((a,b) => b.pendientes - a.pendientes);
+  drawTable(allDriverRows);
+}
+
+function drawTable(rows) {
+  const tbody = document.getElementById('driver-tbody');
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="7" style="text-align:center;color:var(--muted);padding:30px">Sin datos</td></tr>';
+    return;
+  }
+  tbody.innerHTML = rows.map(r => {
+    const cls = r.pct >= 90 ? 'pct-green' : 'pct-red';
+    const barColor = r.pct >= 90 ? '#4ADE80' : '#F87171';
+    return `<tr>
+      <td style="font-weight:500">${r.nombre}</td>
+      <td>${r.hrs}</td>
+      <td>${r.total}</td>
+      <td style="color:var(--green)">${r.entregadas}</td>
+      <td style="color:var(--red)">${r.pendientes}</td>
+      <td><span class="pct-badge ${cls}">${r.pct}%</span></td>
+      <td style="min-width:80px">
+        <div class="mini-bar">
+          <div class="mini-bar-fill" style="width:${r.pct}%; background:${barColor}"></div>
+        </div>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function filterTable() {
+  const q = document.getElementById('search-input').value.toLowerCase();
+  drawTable(allDriverRows.filter(r => r.nombre.toLowerCase().includes(q)));
+}
+
+// ── CSV Export ─────────────────────────────────────────────────────────────
+function exportCSV() {
+  if (!allDriverRows.length) return alert('Sin datos para exportar.');
+  const header = 'Chofer,HRs,Total,Entregadas,Pendientes,% Entregado\n';
+  const rows = allDriverRows.map(r =>
+    `${r.nombre},${r.hrs},${r.total},${r.entregadas},${r.pendientes},${r.pct}%`
+  ).join('\n');
+  const blob = new Blob([header + rows], { type: 'text/csv' });
+  const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+  a.download = `KPI_${selectedDate}.csv`; a.click();
+}
+
+// ── Init: use injected data from Streamlit or fall back to demo ───────────
+window.addEventListener('DOMContentLoaded', () => {
+  if (window._HISTORICO && Object.keys(window._HISTORICO).length) {
+    // Datos reales inyectados desde Streamlit
+    historico = window._HISTORICO;
+    const dates = Object.keys(historico).sort();
+    selectedDate = (window._FECHA_INICIAL && historico[window._FECHA_INICIAL])
+      ? window._FECHA_INICIAL
+      : dates[dates.length - 1];
+  } else {
+    // Demo data (abre el HTML directo sin Streamlit)
+    historico = {
+      "2026-02-18": {"choferes_pendientes":12,"hdr_pendientes":28,"total":420,"entregadas":370,"pct_entregado":88.1,
+        "detalle":{"JUAN JOSE CISNEROS":{"total":20,"entregadas":18,"pendientes":2,"hrs":1},"CAPPUCCIO JOSE":{"total":17,"entregadas":14,"pendientes":3,"hrs":1},"RODRIGUEZ PABLO":{"total":15,"entregadas":10,"pendientes":5,"hrs":1},"ANGULO DIEGO":{"total":22,"entregadas":20,"pendientes":2,"hrs":2},"PERRETTA ROMINA":{"total":18,"entregadas":16,"pendientes":2,"hrs":1}}},
+      "2026-02-19": {"choferes_pendientes":8,"hdr_pendientes":18,"total":390,"entregadas":340,"pct_entregado":87.2,
+        "detalle":{"JUAN JOSE CISNEROS":{"total":20,"entregadas":15,"pendientes":5,"hrs":1},"CAPPUCCIO JOSE":{"total":17,"entregadas":14,"pendientes":3,"hrs":1},"EREZUMA MARTIN":{"total":12,"entregadas":11,"pendientes":1,"hrs":1},"DATTO ACTIS ADRIAN":{"total":25,"entregadas":20,"pendientes":5,"hrs":2}}},
+      "2026-02-20": {"choferes_pendientes":10,"hdr_pendientes":22,"total":377,"entregadas":210,"pct_entregado":55.7,
+        "detalle":{"JUAN JOSE CISNEROS":{"total":20,"entregadas":4,"pendientes":15,"hrs":1},"CAPPUCCIO JOSE":{"total":17,"entregadas":14,"pendientes":3,"hrs":1},"RODRIGUEZ PABLO":{"total":3,"entregadas":1,"pendientes":2,"hrs":1},"CANAVO CRISTIAN":{"total":19,"entregadas":14,"pendientes":4,"hrs":1},"EREZUMA MARTIN":{"total":8,"entregadas":7,"pendientes":1,"hrs":1},"ANGULO DIEGO":{"total":22,"entregadas":18,"pendientes":4,"hrs":2},"PERRETTA ROMINA":{"total":16,"entregadas":14,"pendientes":2,"hrs":1}}}
+    };
+    selectedDate = "2026-02-20";
+  }
+  renderAll();
+});
+</script>
+</body>
+</html>
